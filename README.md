@@ -2,7 +2,8 @@
 
 A Flutter package that provides a customizable and animated side rail widget. This widget can be used to create a dynamic and interactive side navigation rail in your Flutter applications.
 
-<img src="images/closed.png" alt="Dynamic Rail Screenshot"> <img src="images/opend.png" alt="Dynamic Rail Screenshot">  
+<img src="images/closed.png" alt="Dynamic Rail Screenshot">
+<img src="images/opend.png" alt="Dynamic Rail Screenshot">  
     
 
 ## Features
