@@ -17,38 +17,42 @@ class DynamicRail extends StatelessWidget {
   }
   @override
   Widget build(BuildContext context) {
-    return AnimatedPositioned(
-      duration: Duration(milliseconds: 300),
-      right: isRailOpen ? 0 : -railWidth,
-      top: 0,
-      bottom: 0,
-      child: Row(
-        children: [
-          Stack(
-            alignment: Alignment.topLeft,
-            // Changed from Alignment.center to Alignment.topCenter
+    return Stack(
+      children: [
+        AnimatedPositioned(
+          duration: Duration(milliseconds: 300),
+          right: isRailOpen ? 0 : -railWidth,
+          top: 0,
+          bottom: 0,
+          child: Row(
             children: [
-              CustomPaint(
-                painter: CustomCurvePainter(isRailOpen),
-                child: Container(
-                  width: 42,
-                  height: height(context) * 0.73,
-                ),
+              Stack(
+                alignment: Alignment.topLeft,
+                // Changed from Alignment.center to Alignment.topCenter
+                children: [
+                  CustomPaint(
+                    painter: CustomCurvePainter(isRailOpen),
+                    child: Container(
+                      width: 42,
+                      height: height(context) * 0.73,
+                    ),
+                  ),
+                  Positioned(
+                    right: 7,
+                    top: height(context) * 0.07,
+                    child: GestureDetector(
+                      onTap: onPress,
+                      child: icon,
+                    ),
+                  ),
+                ],
               ),
-              Positioned(
-                right: 7,
-                top: height(context) * 0.07,
-                child: GestureDetector(
-                  onTap: onPress,
-                  child: icon,
-                ),
-              ),
+              const VerticalDivider(thickness: 1, width: 1),
+              SafeArea(child: child)
             ],
           ),
-          const VerticalDivider(thickness: 1, width: 1),
-          SafeArea(child: child)
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
