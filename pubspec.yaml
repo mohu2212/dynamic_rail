@@ -1,7 +1,7 @@
 name: dynamic_rail
 description: "A new Flutter project."
 version: 0.0.1
-homepage:
+repository: https://github.com/mohu2212/dynamic_rail
 
 environment:
   sdk: ^3.7.2
@@ -20,7 +20,7 @@ dev_dependencies:
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter packages.
-flutter:
+#flutter:
 
   # To add assets to your package, add an assets section, like this:
   # assets:
