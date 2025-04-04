@@ -20,7 +20,7 @@ To begin using the dynamic_rail package in your Flutter project, add it to your 
 
 ```yaml
 dependencies:
-  dynamic_rail: ^0.0.2+1
+  dynamic_rail: ^0.0.4+2
 ```
 
 Then, import the package in your Dart file:
