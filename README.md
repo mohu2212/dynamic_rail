@@ -3,8 +3,8 @@
 A Flutter package that provides a customizable and animated side rail widget. This widget can be used to create a dynamic and interactive side navigation rail in your Flutter applications.
 
 
-<img src="images/closed.png" alt="Dynamic Rail Closed">
-<img src="images/opend.png" alt="Dynamic Rail Open">
+<img src="images/closed.png" alt="Dynamic Rail Closed" sizes="50%">
+<img src="images/opend.png" alt="Dynamic Rail Open" sizes="50%">
     
 
 ## Features
